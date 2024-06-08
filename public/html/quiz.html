@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,300,150">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,9v2h50v-2zM0,24v2h50v-2zM0,39v2h50v-2z"></path></g></g>
+            </svg>
+            <i>AKP Physics 1.0</i>
+        </div>
+
+        <h2 id="quiz-question">
+            Question tag
+        </h2>
+        <div class="quiz">
+            <ul>
+                <li>
+                    <input type="radio" class="answer" id="option-a" name="quiz-options">
+                    <label for="option-a" id="text_option_a"> Option A</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="option-b" name="quiz-options">
+                    <label for="option-b" id="text_option_b"> Option B</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="option-c" name="quiz-options">
+                    <label for="option-c" id="text_option_c"> Option C</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="option-d" name="quiz-options">
+                    <label for="option-d" id="text_option_d"> Option D</label>
+                </li>
+            </ul>
+        </div>
+        <button class="previous">Previous</button>
+        <button class="submit">Save and Proceed</button>
+        <button class="next">Next</button>
+    </div>
+</body>
+<script src="/js/quiz.js"></script>
+</html>

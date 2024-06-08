@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+    width: 100vh;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.menu svg{
+    cursor: pointer;
+    margin-bottom: 3%;
+}
+
+.menu i{
+    background: linear-gradient(180deg, #9796f0, #fbc7d4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+p{
+    text-align: center;
+}
+
+button {
+    color: #000;
+    font-weight: bold;
+    background: linear-gradient(160deg, #9796f0, #fbc7d4);
+    padding: 12px 30px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 38px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+ul{
+    list-style: none;
+}
+
+#quiz-question{
+    margin-bottom: 20px;
+}
+
+li{
+    padding: 10px;
+}
+
+label{
+    cursor: pointer;
+}
+
+h2{
+    font-weight: 100;
+    font-size: larger;
+}

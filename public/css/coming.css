@@ -1,0 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
