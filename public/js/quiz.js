@@ -20,7 +20,6 @@ window.addEventListener("blur", () => {
     if (a > 2) {
         submitTest();
     }
-    alert(`Tab switch count = ${a}`);
 });
 
 // Auto submit after tab switching
