@@ -1,3 +1,22 @@
+let tabSwitchCount = 0;
+let alertActive = false;
+
+document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+        tabSwitchCount++;
+        if (tabSwitchCount > 2) {
+            submitTest();
+        }
+        if (!alertActive) {
+            alertActive = true;
+            setTimeout(() => {
+                alert(`Tab switch count = ${tabSwitchCount}`);
+                alertActive = false;
+            }, 100);
+        }
+    }
+});
+
 // Disable right-click context menu
 window.addEventListener('contextmenu', function (e) {
     e.preventDefault();
@@ -11,16 +30,6 @@ window.addEventListener('keydown', function (e) {
     if (e.key === 'F12' || e.key === 'Escape' || e.key === 'F11') {
         e.preventDefault();
     }
-});
-
-// When the user loses focus
-let a = 0;
-window.addEventListener("blur", () => {
-    a++;
-    if (a > 2) {
-        submitTest();
-    }
-    alert(`Tab switch count = ${a}`);
 });
 
 // Auto submit after tab switching
