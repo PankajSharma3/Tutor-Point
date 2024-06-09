@@ -32,6 +32,15 @@ window.addEventListener('keydown', function (e) {
     }
 });
 
+// When the user loses focus
+let a = 0;
+window.addEventListener("blur", () => {
+    a++;
+    if (a > 2) {
+        submitTest();
+    }
+});
+
 // Auto submit after tab switching
 function submitTest() {
     alert("Your test is submitted now");
