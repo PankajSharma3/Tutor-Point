@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  user-select: none;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -28,7 +29,7 @@ header .navbar {
 }
 
 .navbar .logo {
-  background: linear-gradient(180deg, #9796f0, #fbc7d4);
+  background: linear-gradient(130deg, #9796f0, #fbc7d4);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: 600;
