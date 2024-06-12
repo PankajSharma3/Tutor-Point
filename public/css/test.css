@@ -1,55 +1,82 @@
-* {
+*{
+    user-select: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    user-select: none;
-    max-height: 100vh;
 }
 
-.container{
-    height: 100vh;
-}
-
-.menu{
+.menu {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
     gap: 30px;
-    padding: 2%;
-    margin-bottom: 40px;
+    padding: 10px;
+    width: 100%;
 }
 
-.menu svg{
+.menu svg {
     cursor: pointer;
-    margin-bottom: 1%;
+    margin-bottom: 15px;
 }
 
-.menu i{
-    background: linear-gradient(180deg, #9796f0, #fbc7d4);
+.menu i {
+    background: linear-gradient(130deg, #9796f0, #fbc7d4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 600;
     font-size: 2.1rem;
     text-decoration: none;
+    padding: 10px;
 }
 
-.card{
+.card {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 1%;
-    cursor: pointer;
+    gap: 5%;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img{
-    height:70px;
+.card img {
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 120px;
+    height: auto;
+    object-fit: cover;
 }
 
-h5{
-    text-align: center;
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.test-info {
+    margin: 2px 0;
+    font-size: 1em;
+    color: #aaaaaa;
+}
+
+.card + .card {
+    margin-top: 20px;
 }
