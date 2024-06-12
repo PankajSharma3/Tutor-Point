@@ -1,88 +1,110 @@
-* {
+*{
+    user-select: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    user-select: none;
-    max-height: 100vh;
 }
 
-body{
+.menu {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.container{
-    height: 100vh;
-    width: 50vh;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     gap: 30px;
-    padding: 2%;
+    padding: 10px;
+    width: 100%;
 }
 
-.menu svg{
+.menu svg {
     cursor: pointer;
-    margin-bottom: 6%;
+    margin-bottom: 15px;
 }
 
-.menu i{
-    background: linear-gradient(180deg, #9796f0, #fbc7d4);
+.menu i {
+    background: linear-gradient(130deg, #9796f0, #fbc7d4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 600;
     font-size: 2.1rem;
     text-decoration: none;
+    padding: 10px;
 }
 
-.items{
+
+.items {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 1%;
+    margin-bottom: 20px;
 }
 
-.items img{
+.items img {
+    border-radius: 50%;
+    width: 100px;
     height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffa500;
 }
 
-.test{
-    padding: 10%;
-    text-align: left;
+.name {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-p{
-    padding: 1%;
+.name h3 {
+    font-size: 1.8em;
+    color: #ffffff;
 }
 
-.button{
+.test {
+    background-color: #1f1f1f;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.test p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #aaaaaa;
+}
+
+
+.button {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.btn{
-    color: #000;
-    font-weight: bold;
+.btn {
+    display: block;
     background: linear-gradient(160deg, #9796f0, #fbc7d4);
-    padding: 12px 30px;
+    color: #1f1f1f;
     border: none;
-    font-size: 1rem;
-    border-radius: 6px;
-    margin-top: 38px;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.2s ease;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-h3{
-    text-align: center;
-    padding: 3%;
+@media (max-width: 480px) {
+    .menu {
+        font-size: 18px;
+        gap: 0;
+    }
 }
